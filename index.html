@@ -30,16 +30,20 @@
 
   <body>
     <div class="container">
-      <header>
-        <h1>Epicodus Project Template</h1>
-      </header>
-      <h2>Hello World!</h2>
-      <p>
-        This is a nice little index file.  It calls in five different files to support Bootstrap, JQuery, and your custom css and js.
-      </p>
-      <footer>
-        <p>&copy; 2016 Epicodus Pair Project, Inc.</p>
-      </footer>
-    </div> <!-- end container -->
+      <h1>Leap year detector</h1>
+
+      <form id="leap-year">
+        <div class="form-group">
+          <label for="year">Enter a year and find out if it's a leap year:</label>
+          <input id="year" type="number">
+        </div>
+
+        <button type="submit" class="btn">Find out!</button>
+      </form>
+
+      <div id="result">
+        <p><span class="year"></span> is <span class="not"></span> a leap year.</p>
+      </div>
+    </div>
   </body>
 </html>
